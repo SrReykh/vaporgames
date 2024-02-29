@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar produtos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-dark overflow-x-hidden">
+    <header class="w-screen flex items-center justify-between gap-3 h-16 bg-lightdark rounded-bl-xl rounded-br-xl shadow-lg shadow-lightdark/50">
+        <div class="flex items-center gap-3">
+            <a href="/"><img src="files/steam-vector-png-33-3800823799.png" alt="Logotipo" class="w-16 h-16 ml-4"></a>
+            <p class="text-white text-xl">Vapor Games</p>
+        </div>
+        <div class="flex gap-6 mr-5 text-white text-bold">
+            <a href="/" class="hover:underline">Home</a>
+            <a href="/cadastraprodutos.html" class="hover:underline">Cadastro</a>
+        </div>
+    </header>
+    
+    <h1 class="font text-white text-3xl text-center mt-2">Cadastro</h1>
+    <div class="font flex justify-center items-center text-white flex-col mt-4">
+            <div class="flex flex-col w-96">
+                <label for="">Nome</label>
+                <input class="text-black rounded h-8 pl-2" type="text" id="nomeUsuario">
+            </div>
+            <div class="flex flex-col w-96">
+                <label for="">E-mail</label>
+                <input class="text-black rounded h-8 pl-2" type="text" id="email">
+            </div>
+            <div class="flex flex-col w-96">
+                <label for="">Senha</label>
+                <input class="text-black rounded h-8 pl-2" type="text" id="senha">
+            </div>
+            <div class="flex gap-4 pt-2">
+                <button type="submit" id="btn-cadastrar" class="bg-green-500 hover:opacity-90 p-2 rounded">Cadastrar</button>
+            </div>
+    </div>
+
+    <div class="flex flex-col justify-center items-center mt-4">
+        <button id="btn-show" class="bg-gray-50 rounded p-2 hover:opacity-90">Mostrar todos os usuários cadastrados</button>
+        <ul class="text-white hidden" id="lista">
+        </ul>
+    </div>
+
+    <footer
+    class="bg-lightdark fixed w-screen bottom-0 h-10 flex items-center justify-center">
+    <div class="p-4 text-center text-white">
+        © 2024 Copyright:
+        <a
+        class="text-white dark:text-neutral-400 hover:opacity-90 hover:underline"
+        href="/"
+        >Vapor Games</a
+        >
+    </div>
+    </footer>
+
+<script src="js/cadastro.js"></script>   
+</script>
+</body>
+</html>
